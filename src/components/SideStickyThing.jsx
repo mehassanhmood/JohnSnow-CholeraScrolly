@@ -2,11 +2,10 @@ import React, { useEffect, useState } from 'react';
 import { Box, Text, Grid, GridItem, Heading, Image } from "@chakra-ui/react";
 
 
-import MapComponent from './MapComponent';
 import { stepsContent } from '../../public/stepsContent';
 import JohnSnow from "/John_Snow.jpg"
 
-
+import MapComponent from './MapComponent'
 
 
 

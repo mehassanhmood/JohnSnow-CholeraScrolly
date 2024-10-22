@@ -1,6 +1,6 @@
 import React from 'react';
 import { MapContainer, TileLayer, Marker, Popup, Circle } from 'react-leaflet';
-import 'leaflet/dist/leaflet.css';
+
 
 
 const MapComponent = (props) => {
