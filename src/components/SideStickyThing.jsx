@@ -1,10 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import { Box, Text, Grid, GridItem, Heading, Image } from "@chakra-ui/react";
 import { MapContainer, TileLayer, Marker, Popup, Circle } from 'react-leaflet';
-import { HeatmapLayer } from 'react-leaflet-heatmap-layer-v3'
 import 'leaflet/dist/leaflet.css';
  
-import { stepsContent } from '../assets/constants/stepsContent';
+import { stepsContent } from '../../public/stepsContent';
 
 
 const MapComponent = (props) => {
