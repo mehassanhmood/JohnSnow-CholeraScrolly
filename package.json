@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://github.com/mehassanhmood/JohnSnow-CholeraScrolly.git",
+  "homepage": "https://mehassanhmood.github.io/JohnSnow-CholeraScrolly",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
