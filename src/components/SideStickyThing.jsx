@@ -4,6 +4,7 @@ import { MapContainer, TileLayer, Marker, Popup, Circle } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
  
 import { stepsContent } from '../../public/stepsContent';
+import JohnSnow from "../../public/John_Snow.jpg"
 
 
 const MapComponent = (props) => {
@@ -124,14 +125,14 @@ const SideStickyThing = () => {
 
 
 return (
-  <Box alignItems={"center"} justifyContent={"center"}>
+  <Box alignItems={"center"} justifyContent={"center"} backgroundColor={"black"}>
     <Box display={"flex"} alignItems={"center"} justifyContent={"center"} margin={"6"} padding={"6"} zIndex={10}>
       <Text fontSize={24} zIndex={10}> John Snow, Epidemiology & Data Analytics </Text>
     </Box>
     <Grid templateColumns={{ base: "1fr", md: "repeat(2, 1fr)" }} gap={6}>
       <GridItem top={"0.0vh"} colSpan={1} bg={"black"} className="sticky-thing" position={"sticky"} display={"flex"} alignItems={"center"} justifyContent={"center"} width={"100%"} height={"75vh"} zIndex={10} h={{ base: "40vh", md: "65vh" }}>
       {activeStep === '1' ? (
-            <Image src="/John_Snow.jpg" width={'100%'} height={'100%'} objectFit='' alt="John Snow" />
+            <Image src={JohnSnow}  width={'100%'} height={'100%'} objectFit='' alt="John Snow" />
           ) : activeStep === '4' ? (
             <MapComponent 
             key={activeStep}
