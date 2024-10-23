@@ -3,14 +3,12 @@ import { MapContainer, TileLayer, Marker, Popup, Circle } from 'react-leaflet';
 import L from 'leaflet';
 
 
-import icon from 'leaflet/dist/images/marker-icon.png';
-import iconShadow from 'leaflet/dist/images/marker-shadow.png';
+import icon from '../../public/hand_pump.jpg';
+import humanIcon from '../../public/humanIcon.png';
 
 let DefaultIcon = L.icon({
   iconUrl: icon,
-  shadowUrl: iconShadow,
-  iconSize:     [18, 28], // size of the icon
-  shadowSize:   [50, 64], // size of the shadow
+  iconSize:     [28, 38], // size of the icon
   iconAnchor:   [10, 10], // point of the icon which will correspond to marker's location
   shadowAnchor: [4, 62],  // the same for the shadow
   popupAnchor:  [-3, -76]
@@ -18,6 +16,13 @@ let DefaultIcon = L.icon({
 
 L.Marker.prototype.options.icon = DefaultIcon;
 
+let HumanIcon = L.icon({
+  iconUrl: humanIcon,
+  iconSize:     [28, 38], // size of the icon
+  iconAnchor:   [10, 10], // point of the icon which will correspond to marker's location
+  shadowAnchor: [4, 62],  // the same for the shadow
+  popupAnchor:  [-3, -76]
+});
 
 const MapComponent = (props) => {
     const {
@@ -25,18 +30,20 @@ const MapComponent = (props) => {
       showPopup,
       deathsInCircle,
       totalDeaths,
-      cambridgeStreetCoords,
-      goldenSquareCoords,
-      showGoldenSquarePopup,
-      carnabyStreetCoords,
+      broadStCoords,
+      crownChapelCoords,
+      gtMarlboroughCoords,
+      deanStreetCoords,
+      soSohoCoords,
+      briddleStCoords,
+      coventryStCoords,
+      warWickStCoords,
       workhouseCoords
     } = props;
   
-    const center = [51.505, -0.09]; // Broad Street pump location
+    const center = [51.513341,-0.136668]; // Broad Street pump location
     const radius = 100; // 100 yards in meters (approximately)
   
-    const deathPercentage = ((deathsInCircle / totalDeaths) * 100) || 0; // Calculate percentage
-    const color = `rgba(255, 0, 0, ${deathPercentage / 100})`; // Adjust color based on death percentage
   
     return (
       <MapContainer center={center} zoom={zoom} style={{ width: "100%", height: "100%" }}>
@@ -52,7 +59,6 @@ const MapComponent = (props) => {
           </Marker>
         )}
         {/* Draw the circle for deaths around the Broad Street Pump */}
-        <Circle center={center} radius={radius} pathOptions={{ fillColor: color, color: color }} />
   
         {/* Marker for the Broad Street Pump */}
         <Marker position={center}>
@@ -60,25 +66,55 @@ const MapComponent = (props) => {
         </Marker>
   
         {/* Marker for Cambridge Street */}
-        {cambridgeStreetCoords && (
-          <Marker position={cambridgeStreetCoords}>
-            <Popup>Cambridge Street</Popup>
+        {crownChapelCoords && (
+          <Marker position={crownChapelCoords}>
+            <Popup>Crown Chapel</Popup>
           </Marker>
         )}
   
         {/* Marker for Golden Square Pump */}
-        {showGoldenSquarePopup && goldenSquareCoords && (
+        {/* {showGoldenSquarePopup && goldenSquareCoords && (
           <Marker position={goldenSquareCoords}>
             <Popup>
               Pump at Golden Square – A Different Outcome. Fewer deaths recorded around this pump.
             </Popup>
           </Marker>
-        )}
+        )} */}
   
         {/* Marker for Carnaby Street */}
-        {carnabyStreetCoords && (
-          <Marker position={carnabyStreetCoords}>
-            <Popup>Carnaby Street</Popup>
+        {gtMarlboroughCoords && (
+          <Marker position={gtMarlboroughCoords}>
+            <Popup>GT Marlborough</Popup>
+          </Marker>
+        )}
+        {deanStreetCoords && (
+          <Marker position={deanStreetCoords}>
+            <Popup>Dean Street</Popup>
+          </Marker>
+        )}
+        {soSohoCoords && (
+          <Marker position={soSohoCoords}>
+            <Popup>So Soho</Popup>
+          </Marker>
+        )}
+        {briddleStCoords && (
+          <Marker position={briddleStCoords}>
+            <Popup>Briddle Street</Popup>
+          </Marker>
+        )}
+        {coventryStCoords && (
+          <Marker position={coventryStCoords}>
+            <Popup>Coventry Street</Popup>
+          </Marker>
+        )}
+        {warWickStCoords && (
+          <Marker position={warWickStCoords}>
+            <Popup>Warwick Street</Popup>
+          </Marker>
+        )}
+        {totalDeaths && (
+          <Marker position={totalDeaths}>
+            <Popup>Warwick Street</Popup>
           </Marker>
         )}
   

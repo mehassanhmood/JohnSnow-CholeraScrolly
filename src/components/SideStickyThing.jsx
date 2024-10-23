@@ -16,10 +16,15 @@ const SideStickyThing = () => {
 
   const totalDeaths = 10; // Total deaths for the specific clue
   const deathsInCircle = 10;
-  const cambridgeStreetCoords = [51.505, -0.1];  // For demonstration purposes, we assume 10 deaths in the circle
+  const broadStCoords = [51.513341,-0.136668];  // For demonstration purposes, we assume 10 deaths in the circle
   const goldenSquareCoords = [51.510, -0.080]; 
-  const carnabyStreetCoords = [51.5121, -0.1383]; // Replace with actual coordinates for Carnaby Street
-  const carnabyStreetRadius = 7;
+  const crownChapelCoords = [51.513876,-0.139586]; // Replace with actual coordinates for Carnaby Street
+  const gtMarlboroughCoords = [51.514906,-0.139671];
+  const deanStreetCoords = [51.512354,-0.13163];
+  const soSohoCoords = [51.512139,-0.133594];
+  const briddleStCoords = [51.511542,-0.135919];
+  const coventryStCoords = [51.510019,-0.133962];
+  const warWickStCoords = [51.511295,-0.138199];
   const workhouseCoords = [51.5110, -0.1260]; // Replace with actual coordinates for the workhouse
   const workhouseRadius = 10;
 
@@ -56,60 +61,96 @@ return (
       <GridItem top={"0.0vh"} colSpan={1} bg={"black"} className="sticky-thing" position={"sticky"} display={"flex"} alignItems={"center"} justifyContent={"center"} width={"100%"} height={"75vh"} zIndex={10} h={{ base: "40vh", md: "65vh" }}>
       {activeStep === '1' ? (
             <Image src={JohnSnow}  width={'100%'} height={'100%'} objectFit='' alt="John Snow" />
-          ) : activeStep === '4' ? (
+          ) : activeStep === '2' ? (
             <MapComponent 
               // key={activeStep}
-              showPopup={activeStep === '2' || activeStep === '3'} 
-              deathsInCircle={deathsInCircle} 
-              totalDeaths={totalDeaths}
+              soSohoCoords={soSohoCoords}
               zoom={22}  
             />
-          ) : activeStep === '5' ? (
+          ) : activeStep === '3' ? (
             <MapComponent 
               key={activeStep}
-              showPopup={activeStep === '2' || activeStep === '3'} 
-              deathsInCircle={deathsInCircle} 
-              totalDeaths={totalDeaths} 
-              cambridgeStreetCoords={cambridgeStreetCoords}
-              zoom={15} 
+              broadStCoords={broadStCoords}
+              soSohoCoords={soSohoCoords}
+              zoom={16} 
             />
+          ) : activeStep === '4' ? (
+            <MapComponent 
+            key={activeStep}
+            broadStCoords={broadStCoords}
+            soSohoCoords={soSohoCoords}
+            crownChapelCoords = {crownChapelCoords} 
+            zoom={16}
+          />
+          ) : activeStep === '5' ? (
+            <MapComponent 
+            key={activeStep}
+            broadStCoords={broadStCoords}
+            soSohoCoords={soSohoCoords}
+            crownChapelCoords = {crownChapelCoords} 
+            gtMarlboroughCoords = {gtMarlboroughCoords}
+            zoom={16}
+          />
           ) : activeStep === '6' ? (
             <MapComponent 
             key={activeStep}
-            showPopup={activeStep === '2' || activeStep === '3'} 
-            deathsInCircle={deathsInCircle} 
-            totalDeaths={totalDeaths} 
-            carnabyStreetCoords = {carnabyStreetCoords} 
-            cambridgeStreetCoords={cambridgeStreetCoords}
-            // goldenSquareCoords={goldenSquareCoords}
-            // showGoldenSquarePopup={activeStep === '6'}
-            zoom={13}
+            broadStCoords={broadStCoords}
+            soSohoCoords={soSohoCoords}
+            crownChapelCoords = {crownChapelCoords} 
+            gtMarlboroughCoords = {gtMarlboroughCoords}
+            deanStreetCoords = {deanStreetCoords}
+            zoom={16}
           />
           ) : activeStep === '7' ? (
             <MapComponent 
             key={activeStep}
-            showPopup={activeStep === '2' || activeStep === '3'} 
-            deathsInCircle={deathsInCircle} 
-            totalDeaths={totalDeaths} 
-            carnabyStreetCoords = {carnabyStreetCoords} 
-            cambridgeStreetCoords={cambridgeStreetCoords}
-            goldenSquareCoords={goldenSquareCoords}
-            showGoldenSquarePopup={activeStep === '7'}
-            zoom={13}
+            broadStCoords={broadStCoords}
+            soSohoCoords={soSohoCoords}
+            crownChapelCoords = {crownChapelCoords} 
+            gtMarlboroughCoords = {gtMarlboroughCoords}
+            deanStreetCoords = {deanStreetCoords}
+            goldenSquareCoords = {goldenSquareCoords}
+            zoom={16}
           />
           ) : activeStep === '8' ? (
             <MapComponent 
-            // key={activeStep}
-            showPopup={activeStep === '2' || activeStep === '3'} 
-            deathsInCircle={deathsInCircle} 
-            totalDeaths={totalDeaths} 
-            carnabyStreetCoords = {carnabyStreetCoords} 
-            cambridgeStreetCoords={cambridgeStreetCoords}
-            goldenSquareCoords={goldenSquareCoords}
-            showGoldenSquarePopup={activeStep > '7'}
-            workhouseCoords = {workhouseCoords}
-            workhouseRadius = {workhouseRadius}
-            zoom={13}
+            key={activeStep}
+            broadStCoords={broadStCoords}
+            soSohoCoords={soSohoCoords}
+            crownChapelCoords = {crownChapelCoords} 
+            gtMarlboroughCoords = {gtMarlboroughCoords}
+            deanStreetCoords = {deanStreetCoords}
+            goldenSquareCoords = {goldenSquareCoords}
+            briddleStCoords = {briddleStCoords}
+            zoom={16}
+          />
+          ) : activeStep === '9' ? (
+            <MapComponent 
+            key={activeStep}
+            broadStCoords={broadStCoords}
+            soSohoCoords={soSohoCoords}
+            crownChapelCoords = {crownChapelCoords} 
+            gtMarlboroughCoords = {gtMarlboroughCoords}
+            deanStreetCoords = {deanStreetCoords}
+            goldenSquareCoords = {goldenSquareCoords}
+            briddleStCoords = {briddleStCoords}
+            coventryStCoords = {coventryStCoords}
+
+            zoom={16}
+          />
+          ) : activeStep === '10' ? (
+            <MapComponent 
+            key={activeStep}
+            broadStCoords={broadStCoords}
+            soSohoCoords={soSohoCoords}
+            crownChapelCoords = {crownChapelCoords} 
+            gtMarlboroughCoords = {gtMarlboroughCoords}
+            deanStreetCoords = {deanStreetCoords}
+            goldenSquareCoords = {goldenSquareCoords}
+            briddleStCoords = {briddleStCoords}
+            coventryStCoords = {coventryStCoords}
+            warWickStCoords = {warWickStCoords}
+            zoom={16}
           />
           ) :
            (
