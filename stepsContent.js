@@ -6,8 +6,8 @@ export const stepsContent = [
     },
     {
       step: 2,
-      title: "The Cholera Outbreak of 1854",
-      text: "John Snow's investigation led him to a public water pump on Broad Street, which became the epicenter of his theory. Located at the heart of Soho, this pump drew hundreds of residents daily for water. Snow mapped the cholera deaths around the pump and found a stark pattern emerging, reinforcing his hypothesis that the water was the source of the disease."
+      title: "The Cholera Outbreak of 1854 and Soho Dsitrict",
+      text: "In the summer of 1854, a deadly cholera outbreak swept through the Soho district of London. Hundreds fell ill, many died, and the source of the epidemic remained a mystery. But one man—Dr. John Snow—was determined to find the truth. Armed with nothing but his sharp mind and a deep belief in data, Snow embarked on a journey to understand the outbreak."
     },
     {
       step: 3,
@@ -16,52 +16,42 @@ export const stepsContent = [
     },
     {
       step: 4,
-      title: "The First Clue – A Cluster of Deaths",
-      text: "On September 1, 1854, John Snow began mapping cholera deaths, noting a cluster of fatalities near the Broad Street pump. In just a few days, 10 people living within 100 yards of the pump had died. The close proximity of these deaths to the pump strengthened his belief that contaminated water, not air, was spreading cholera."
+      title: "Crown Chapel",
+      text: "A short walk away, at Crown Chapel (51.513876, -0.139586), another pump serves the community. Nearby deaths, while fewer, contribute to Snow’s growing dataset. With every step, he maps not just the disease but the habits of the people—their daily routines, where they live, where they drink water. More deaths, more data points, and yet the evidence keeps pointing back to Broad Street."
     },
     {
       step: 5,
-      title: "Deaths on Cambridge Street",
-      text: "Snow extended his investigation to nearby streets like Cambridge Street, where more deaths were recorded. On this street alone, seven individuals succumbed to cholera. Once again, the proximity to the Broad Street pump was undeniable, adding more weight to his waterborne theory."
+      title: "Great Marlborough Street",
+      text: "On Great Marlborough Street (51.514906, -0.139671), Snow’s findings begin to sharpen. There have been deaths here too, though fewer than around Broad Street. The pump on this street serves fewer people, but Snow’s analysis is relentless. He knows that every pump tells part of the story, and each one must be examined if he is to prove his theory."
     },
     {
       step: 6,
-      title: "Carnaby Street – A Close Connection",
-      text: "As Snow surveyed the area, he mapped more deaths along Carnaby Street. The death toll continued to rise, with six victims in a small radius. Snow's map now had several clusters, each pointing back to a common source: the Broad Street pump."
+      title: "Dean Street",
+      text: "Moving toward Dean Street (51.512354, -0.13163), Snow observes more cases of cholera. As with the other pumps, the number of deaths helps Snow build his theory that the water supply, not the air, is spreading the disease. He tracks every movement with the precision of a surgeon. Snow’s data-driven approach is unheard of at the time—he’s turning the investigation into a numbers game."
     },
     {
       step: 7,
       title: "Pump at Golden Square – A Different Outcome",
-      text: "Snow also examined other pumps in the area, including the one at Golden Square. While deaths were recorded around this pump, they were significantly fewer. Snow noted that the water from this pump seemed less contaminated than the Broad Street pump, leading him to focus even more on the latter as the main source."
+      text: "Moving toward Dean Street (51.512354, -0.13163), Snow observes more cases of cholera. As with the other pumps, the number of deaths helps Snow build his theory that the water supply, not the air, is spreading the disease. He tracks every movement with the precision of a surgeon. Snow’s data-driven approach is unheard of at the time—he’s turning the investigation into a numbers game."
     },
     {
       step: 8,
-      title: "The Workhouse Exception",
-      text: "Curiously, while the neighborhood suffered, a nearby workhouse had very few cases of cholera. Snow later discovered that the workhouse had its own private water supply, completely separate from the Broad Street pump. This anomaly became a crucial piece of evidence for Snow’s theory, showing that people who avoided the pump’s water were less affected."
+      title: "Bridle Street",
+      text: "In the narrow lanes near Bridle Street (51.511542, -0.135919), Snow continues to document deaths. Each pump in Soho adds a new layer to his understanding. The patterns are becoming clearer. More deaths around some pumps, fewer around others—it’s the puzzle Snow is solving one pump at a time."
     },
     {
       step: 9,
-      title: "John Snow's Bold Move",
-      text: "After gathering extensive evidence, Snow took the bold step of presenting his findings to local authorities. He argued that the Broad Street pump was the source of the cholera outbreak and urged them to remove the pump handle to prevent further contamination. Though the 'miasma' theory was still widely accepted, officials agreed to his request."
+      title: "Coventry Street",
+      text: "As Snow approaches Coventry Street (51.510019, -0.133962), he sees that the farther away he gets from Broad Street, the fewer deaths he records. His data maps are beginning to show a sharp drop in cases the farther one moves from the epicenter of the outbreak. This is no coincidence. Snow is close to proving his theory."
     },
     {
       step: 10,
-      title: "The Pump Handle is Removed",
-      text: "On September 8, 1854, the Broad Street pump handle was removed, and soon after, the cholera outbreak slowed dramatically. While it would take years for the medical community to fully accept Snow’s waterborne theory, this decisive action marked a turning point in public health policy. John Snow's map, meticulously documenting the deaths around the pumps, became one of the earliest examples of epidemiological investigation."
+      title: "Warwick Street",
+      text: "Finally, Snow reaches Warwick Street (51.511295, -0.138199). His data now spans the entire neighborhood. Deaths clustered around Broad Street, tapering off near other pumps. His data doesn’t just show the spread of the disease—it shows its source. The Broad Street pump is at the heart of the outbreak."
     },
     {
       step: 11,
-      title: "Revisiting the Broad Street Pump – An Aftermath",
-      text: "After the epidemic subsided, Snow revisited his research on the Broad Street pump. He discovered that a cesspool near the pump had been leaking sewage into the water supply. This confirmed his theory and provided a clear explanation of how cholera had spread through contaminated drinking water."
-    },
-    {
-      step: 12,
-      title: "John Snow’s Legacy",
-      text: "Though John Snow passed away in 1858, his work left an indelible mark on the field of public health. His cholera map remains a powerful visual tool in epidemiology, influencing generations of researchers and urban planners. The pump at Broad Street became a symbol of the triumph of scientific investigation over popular misconception."
-    },
-    {
-      step: 13,
       title: "The Pump Today – A Memorial to Science",
-      text: "Today, a replica of the Broad Street pump stands in Soho, London, just a few steps away from its original location. It serves as a reminder of John Snow’s pioneering work and the lives saved by his groundbreaking discovery. The map he created, linking death locations to pump coordinates, continues to inspire how we understand and manage disease outbreaks."
+      text: "Snow’s method was simple but brilliant. By plotting the location of each death and cross-referencing them with the water sources, he was able to connect the dots. The Broad Street pump was the common denominator. In a bold move, Snow convinced the authorities to remove the pump handle, cutting off access to the contaminated water. And just like that, the cholera outbreak began to fade. John Snow’s legacy isn’t just about cholera—it’s about data. His maps and his data-driven approach changed the way we think about disease, laying the groundwork for modern epidemiology."
     }
   ];
