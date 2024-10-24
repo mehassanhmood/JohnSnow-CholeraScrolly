@@ -1,9 +1,11 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import { Box, Text, Grid, GridItem, Heading, Image } from "@chakra-ui/react";
 
 
 import { stepsContent } from '../../public/stepsContent';
 import JohnSnow from "/John_Snow.jpg"
+import totalDeaths from "../../public/totalDeaths";
+import pump from "../../public/pump.jpg"
 
 import MapComponent from './MapComponent'
 
@@ -13,9 +15,10 @@ const SideStickyThing = () => {
 
   const [activeStep, setActiveStep] = useState(0);
   
+  
 
-  const totalDeaths = 10; // Total deaths for the specific clue
-  const deathsInCircle = 10;
+   
+  
   const broadStCoords = [51.513341,-0.136668];  // For demonstration purposes, we assume 10 deaths in the circle
   const goldenSquareCoords = [51.510, -0.080]; 
   const crownChapelCoords = [51.513876,-0.139586]; // Replace with actual coordinates for Carnaby Street
@@ -37,6 +40,7 @@ const SideStickyThing = () => {
       steps.forEach(step => step.style.backgroundColor = "");
       el.style.backgroundColor = "orange";
       setActiveStep(el.dataset.step);
+      
 
     };
 
@@ -58,13 +62,14 @@ return (
       <Text fontSize={24} zIndex={10}> John Snow, Epidemiology & Data Analytics </Text>
     </Box>
     <Grid templateColumns={{ base: "1fr", md: "repeat(2, 1fr)" }} gap={6}>
-      <GridItem top={"0.0vh"} colSpan={1} bg={"black"} className="sticky-thing" position={"sticky"} display={"flex"} alignItems={"center"} justifyContent={"center"} width={"100%"} height={"75vh"} zIndex={10} h={{ base: "40vh", md: "65vh" }}>
-      {activeStep === '1' ? (
+      <GridItem top={"2.0vh"} ml={4} colSpan={1} bg={"black"} className="sticky-thing" position={"sticky"} display={"flex"} alignItems={"center"} justifyContent={"center"} width={"100%"} zIndex={10} h={{ base: "40vh", md: "65vh" }}>
+          {activeStep === '1'  ? (
             <Image src={JohnSnow}  width={'100%'} height={'100%'} objectFit='' alt="John Snow" />
           ) : activeStep === '2' ? (
             <MapComponent 
-              // key={activeStep}
+              key={activeStep}
               soSohoCoords={soSohoCoords}
+              totalDeaths = {totalDeaths}
               zoom={22}  
             />
           ) : activeStep === '3' ? (
@@ -72,6 +77,7 @@ return (
               key={activeStep}
               broadStCoords={broadStCoords}
               soSohoCoords={soSohoCoords}
+              totalDeaths = {totalDeaths}
               zoom={16} 
             />
           ) : activeStep === '4' ? (
@@ -79,7 +85,8 @@ return (
             key={activeStep}
             broadStCoords={broadStCoords}
             soSohoCoords={soSohoCoords}
-            crownChapelCoords = {crownChapelCoords} 
+            crownChapelCoords = {crownChapelCoords}
+            totalDeaths = {totalDeaths} 
             zoom={16}
           />
           ) : activeStep === '5' ? (
@@ -89,6 +96,7 @@ return (
             soSohoCoords={soSohoCoords}
             crownChapelCoords = {crownChapelCoords} 
             gtMarlboroughCoords = {gtMarlboroughCoords}
+            totalDeaths = {totalDeaths}
             zoom={16}
           />
           ) : activeStep === '6' ? (
@@ -99,6 +107,7 @@ return (
             crownChapelCoords = {crownChapelCoords} 
             gtMarlboroughCoords = {gtMarlboroughCoords}
             deanStreetCoords = {deanStreetCoords}
+            totalDeaths = {totalDeaths}
             zoom={16}
           />
           ) : activeStep === '7' ? (
@@ -110,6 +119,7 @@ return (
             gtMarlboroughCoords = {gtMarlboroughCoords}
             deanStreetCoords = {deanStreetCoords}
             goldenSquareCoords = {goldenSquareCoords}
+            totalDeaths = {totalDeaths}
             zoom={16}
           />
           ) : activeStep === '8' ? (
@@ -122,6 +132,7 @@ return (
             deanStreetCoords = {deanStreetCoords}
             goldenSquareCoords = {goldenSquareCoords}
             briddleStCoords = {briddleStCoords}
+            totalDeaths = {totalDeaths}
             zoom={16}
           />
           ) : activeStep === '9' ? (
@@ -135,7 +146,7 @@ return (
             goldenSquareCoords = {goldenSquareCoords}
             briddleStCoords = {briddleStCoords}
             coventryStCoords = {coventryStCoords}
-
+            totalDeaths = {totalDeaths}
             zoom={16}
           />
           ) : activeStep === '10' ? (
@@ -150,12 +161,16 @@ return (
             briddleStCoords = {briddleStCoords}
             coventryStCoords = {coventryStCoords}
             warWickStCoords = {warWickStCoords}
+            totalDeaths = {totalDeaths}
             zoom={16}
           />
           ) :
-           (
-            <MapComponent key={activeStep}
-             showPopup={activeStep === '2' || activeStep === '3'} zoom={13}/>
+           (<Image src={pump}  width={'100%'} height={'100%'} objectFit='' alt="Broad Street Pump" />
+            // <MapComponent
+            // key={activeStep}
+            // broadStCoords={broadStCoords}
+            // totalDeaths = {totalDeaths}
+            // zoom={16}/>
           )}
       </GridItem>
 
@@ -171,7 +186,11 @@ return (
         </Box>
       </GridItem>
     </Grid>
+    <Box h={32}>
+      Somethins here to make the last step work
+    </Box>
   </Box>
+  
 );
 };
 
