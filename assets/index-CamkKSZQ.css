@@ -1,0 +1,1 @@
+.step{transition:opacity .5s ease,transform .9s ease,background-color .5s ease-in;opacity:.4;transform:scale(.5);background-color:gray}.step.active{opacity:1;transform:scale(1);background-color:orange}.image{opacity:0;animation:fadeInScale .6s ease-in forwards}.pump{opacity:0;animation:fadeInScale .6s ease-in forwards}@keyframes fadeInScale{to{opacity:1}}
