@@ -27,7 +27,7 @@ export const stepsContent = [
     {
       step: 6,
       title: "Dean Street",
-      text: "Moving toward Dean Street, Snow observed more cases of cholera. As with the other pumps, the number of deaths helped Snow build his theory that the water supply, not the air, is spreading the disease. He tracked every movement with the precision of a surgeon. Snow’s data-driven approach was unheard of at the time—he turned the investigation into a numbers game."
+      text: "Moving towards Dean Street, Snow observed more cases of cholera. As with the other pumps, the number of deaths helped Snow build his theory that the water supply, not the air, was spreading the disease. He tracked every movement with the precision of a surgeon. Snow’s data-driven approach was unheard of at the time—he turned the investigation into a numbers game."
     },
 
     {
