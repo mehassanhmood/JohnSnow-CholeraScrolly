@@ -48,6 +48,6 @@ export const stepsContent = [
     {
       step: 10,
       title: "The Pump Today – A Memorial to Science",
-      text: "Snow’s method was simple but brilliant. By plotting the location of each death and cross-referencing them with the water sources, he was able to connect the dots. The Broad Street pump was the common denominator. Snow convinced the authorities to remove the pump handle, cutting off access to the contaminated water. And just like that, the cholera outbreak began to fade. John Snow’s legacy isn’t just about cholera—it’s about data. His maps and his data-driven approach laid the groundwork for modern epidemiology."
+      text: "By plotting the location of each death and cross-referencing them with the water sources, Snow was able to connect the dots. The Broad Street pump was the common denominator. Snow convinced the authorities to remove the pump handle, cutting off access to the contaminated water. And just like that, the cholera outbreak began to fade. John Snow’s legacy isn’t just about cholera—it’s about data. His maps and his data-driven approach laid the groundwork for modern epidemiology."
     }
   ];
