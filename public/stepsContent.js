@@ -33,17 +33,17 @@ export const stepsContent = [
     {
       step: 7,
       title: "Bridle Street",
-      text: "In the narrow lanes near Bridle Street, Snow continues to document deaths. Each pump in Soho adds a new layer to his understanding. The patterns are becoming clearer. More deaths around some pumps, fewer around others—it’s the puzzle Snow is solving one pump at a time."
+      text: "In the narrow lanes near Bridle Street, Snow continues to document deaths. Each pump in Soho adds a new layer to his understanding. The patterns are becoming clearer. More deaths around some pumps, fewer around others—it’s the puzzle Snow was solving one pump at a time."
     },
     {
       step: 8,
       title: "Coventry Street",
-      text: "As Snow approaches Coventry Street, he sees that the farther away he gets from Broad Street, the fewer deaths he records. His data maps are beginning to show a sharp drop in cases the farther one moves from the epicenter of the outbreak. This is no coincidence. Snow is close to proving his theory."
+      text: "As Snow approaches Coventry Street, he sees that the farther away he gets from Broad Street, the fewer deaths he records. His data maps were beginning to show a sharp drop in cases the farther one moves from the epicenter of the outbreak. This was no coincidence. Snow was close to proving his theory."
     },
     {
       step: 9,
       title: "Warwick Street",
-      text: "Finally, Snow reaches Warwick Street. His data now spans the entire neighborhood. Deaths clustered around Broad Street, tapering off near other pumps. His data doesn’t just show the spread of the disease—it shows its source. The Broad Street pump is at the heart of the outbreak."
+      text: "Finally, Snow reaches Warwick Street. His data now spans the entire neighborhood. Deaths clustered around Broad Street, tapering off near other pumps. His data doesn’t just show the spread of the disease—it shows its source. The Broad Street pump was at the heart of the outbreak."
     },
     {
       step: 10,
