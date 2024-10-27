@@ -19,7 +19,7 @@ L.Marker.prototype.options.icon = DefaultIcon;
 
 let HumanIcon = L.icon({
   iconUrl: humanIcon,
-  iconSize:     [4, 10], // size of the icon
+  iconSize:     [5, 12], // size of the icon
   iconAnchor:   [10, 10], // point of the icon which will correspond to marker's location
   shadowAnchor: [4, 62],  // the same for the shadow
   popupAnchor:  [-3, -76]
