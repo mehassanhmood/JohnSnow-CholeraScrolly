@@ -44,7 +44,7 @@ Check out the live version of the project [here](https://mehassanhmood.github.io
 1. **Clone the repository**
 ```bash
     git clone https://github.com/mehassanhmood/JohnSnow-CholeraScrolly.git
-    cd john-snow-cholera-map
+    cd JohnSnow-CholeraScrolly
 ```
 2. **Install Dependencies**
 ```bash
