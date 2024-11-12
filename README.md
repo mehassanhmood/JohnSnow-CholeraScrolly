@@ -8,10 +8,6 @@ A data-driven storytelling project recreating John Snow’s famous cholera map, 
 - [Features](#features)
 - [Tech Stack](#tech-stack)
 - [Setup & Installation](#setup--installation)
-- [Usage](#usage)
-- [Project Structure](#project-structure)
-- [Data Source](#data-source)
-- [License](#license)
 
 ---
 
