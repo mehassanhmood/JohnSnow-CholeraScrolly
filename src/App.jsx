@@ -1,5 +1,4 @@
-import { motion, useScroll } from "framer-motion"
-import { Box } from "@chakra-ui/react"
+import "./App.css"
 import SideStickyThing from './components/SideStickyThing';
 
 function App() {
@@ -7,13 +6,11 @@ function App() {
 
 
   return (
-    <>  
-      <Box
-      />
+
        <div className="relative">
         <SideStickyThing />
       </div>
-    </>
+
   )
 }
 
