@@ -6,11 +6,11 @@ function App() {
 
 
   return (
-
-       <div className="relative">
+    <div className="relative h-[100vh]">
+       <div className="sticky top-0">
         <SideStickyThing />
       </div>
-
+    </div>    
   )
 }
 
