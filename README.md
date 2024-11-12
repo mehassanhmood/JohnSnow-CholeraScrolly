@@ -17,7 +17,7 @@ This project is a modern, interactive tribute to John Snow's pioneering work in 
 
 ## Demo
 
-Check out the live version of the project [here](https://your-gh-pages-link.com).
+Check out the live version of the project [here](https://mehassanhmood.github.io/JohnSnow-CholeraScrolly/).
 
 ## Features
 
